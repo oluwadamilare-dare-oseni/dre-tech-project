@@ -1,0 +1,149 @@
+main{
+  padding-top:32px ;
+}
+
+.top-container{
+  margin-top: 100px;
+}
+
+.background{
+  background: url(../images/plans-background.jpg);
+  width: 100%;
+  height:100%;
+  position: fixed;
+  z-index: -2;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.package:hover,
+.package:active{
+  box-shadow: 2px 2px 1px 5px rgba(0, 0, 0, 0.5);
+  border-color: #ffffff;
+  border-radius: 0px 8px 8px 0px;
+}
+
+#free:hover,
+#free:active{
+  box-shadow: 2px 2px 1px 5px rgba(0, 0, 0, 0.5);
+  border-color: #ffffff;
+  background: rgba(157, 252, 173, 0.95) ;
+  border-radius: 8px 0px 0px 8px;
+}
+
+#plus:hover,
+#plus:active{
+  box-shadow: 2px 2px 1px 5px rgba(0, 0, 0, 0.5);
+  border-color: #ffffff;
+  background: rgba(157, 252, 173, 0.95) ;
+  border-radius: 0px 8px 8px 0px;
+}
+
+#premium:hover,
+#premium:active{
+  box-shadow: 2px 2px 1px 5px rgba(0, 0, 0, 0.5);
+  border-color: #ffffff;
+  background:rgba(101, 255, 127, 0.95);
+  border-radius: 0px 8px 8px 0px;
+}
+
+.package{
+  width: 80%;
+  margin: 16px 0;
+  border: 4px solid #0e4f1f;
+  border-left: none;
+  position: relative;
+}
+
+.package a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  padding: 32px;
+}
+
+.package__badge{
+  width: 80px;
+  height: 80px;
+  background: #ff1b68;
+  border-radius: 50%;
+  border:3px solid #0e4f1f;
+  margin: 20px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  box-shadow: 2px 10px 8px 3px inset rgba(14, 79, 31, 0.80);
+  text-align: center;
+  color:#ffffff;
+  padding: 30px;
+  padding-inline: 10px;
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+#free .package__badge{
+  left: 0;
+  font-size: 10px;
+  padding-top: 30px;
+  padding-inline: 10px;
+}
+
+.package__subtitle{
+  color: #979797;
+}
+
+.package__info{
+  padding: 16px;
+  border:1px solid #0e4f1f ;
+  color:#0e4f1f ;
+  font-size: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+#premium .package__info{
+  border-color: #ffffff;
+  background: #ff1b68;
+  color: #ffffff;
+  
+}
+
+#plus{
+  background: rgba(213, 255, 220, 0.95);
+  border-radius: 0px 5px 5px 0px;
+}
+
+#free{
+  background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-left:4px solid #0e4f1f;
+  border-right: none;
+  text-align: right;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.clear{
+  clear: both;
+}
+#premium{
+  background: #2ddf5c;
+  border-radius: 0px 5px 5px 0px;
+  border-color: #ff1b68;
+}
+
+#premium .package__title{
+ color: #ffffff;
+}
+
+#premium .package__subtitle{
+ color: #ffffff;
+} 
+
